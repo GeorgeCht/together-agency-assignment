@@ -2,6 +2,8 @@
 
 This is a technical assignment for a creative developer position at Together Agency. Developed by GeorgeCht.
 
+Live preview build [here](https://georgecht.github.io/together-agency-assignment/).
+
 ## Getting Started
 
 First, run the development server:
