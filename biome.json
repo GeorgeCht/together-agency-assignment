@@ -19,7 +19,14 @@
     "rules": {
       "recommended": true,
       "suspicious": {
-        "noUnknownAtRules": "off"
+        "noUnknownAtRules": "off",
+        "noArrayIndexKey": "off"
+      },
+      "style": {
+        "noNonNullAssertion": "off"
+      },
+      "performance": {
+        "noImgElement": "off"
       }
     },
     "domains": {
@@ -30,7 +37,7 @@
   "assist": {
     "actions": {
       "source": {
-        "organizeImports": "on"
+        "organizeImports": "off"
       }
     }
   }

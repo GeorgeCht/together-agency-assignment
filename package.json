@@ -2,24 +2,32 @@
   "name": "together-agency-assignment",
   "version": "0.1.0",
   "private": true,
+  "author": "George Cht <info@georgecht.com>",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
     "lint": "biome check",
-    "format": "biome format --write"
+    "format": "biome format --write",
+    "test:a11y": "axe http://localhost:3000"
   },
   "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "embla-carousel-react": "^8.6.0",
+    "motion": "^12.34.0",
     "next": "16.1.6",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
+    "@axe-core/cli": "^4.11.1",
     "@biomejs/biome": "2.2.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "playwright": "^1.58.2",
     "tailwindcss": "^4",
     "typescript": "^5"
   },

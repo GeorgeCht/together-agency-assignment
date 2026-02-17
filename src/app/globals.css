@@ -1,26 +1,48 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  --breakpoint-xs: 28rem;
+  --breakpoint-2xs: 20rem;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --ease-snap: cubic-bezier(0.15, 1, 0.15, 1);
+  --ease-settle: cubic-bezier(0.2, 1, 0.2, 1);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-dark-50: rgba(240, 248, 251, 1);
+  --color-dark-100: rgba(220, 236, 242, 1);
+  --color-dark-200: rgba(186, 214, 224, 1);
+  --color-dark-300: rgba(145, 186, 201, 1);
+  --color-dark-400: rgba(104, 154, 173, 1);
+  --color-dark-500: rgba(72, 125, 145, 1);
+  --color-dark-600: rgba(52, 98, 117, 1);
+  --color-dark-700: rgba(35, 73, 90, 1);
+  --color-dark-800: rgba(20, 52, 66, 1);
+  --color-dark-900: rgba(10, 36, 47, 1);
+  --color-dark-950: rgba(2, 23, 32, 1);
+
+  --color-electric-50: rgba(242, 241, 255, 1);
+  --color-electric-100: rgba(226, 224, 255, 1);
+  --color-electric-200: rgba(196, 193, 255, 1);
+  --color-electric-300: rgba(160, 156, 255, 1);
+  --color-electric-400: rgba(120, 115, 255, 1);
+  --color-electric-500: rgba(94, 89, 255, 1);
+  --color-electric-600: rgba(73, 69, 255, 1);
+  --color-electric-700: rgba(60, 56, 220, 1);
+  --color-electric-800: rgba(47, 44, 180, 1);
+  --color-electric-900: rgba(35, 33, 140, 1);
+  --color-electric-950: rgba(24, 22, 95, 1);
+
+  --font-inter: var(--font-inter);
+  --font-tiempos-headline: var(--font-tiempos-headline);
+
+  --text-bodylg: 18px;
+  --text-bodylg--line-height: 1.5rem;
+
+  --text-bodymd: 16px;
+  --text-bodymd--line-height: 1.5rem;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  color: var(--color-dark-950);
+  font-family: "Inter", Arial, Helvetica, sans-serif;
 }
