@@ -115,6 +115,8 @@ const AutomationShowcase = ({ step = 1 }: { step: 1 | 2 | 3 | 4 }) => {
                 className='w-full max-sm:p-4 max-sm:py-10 max-sm:mt-16'
               >
                 <Image
+                  priority
+                  loading='eager'
                   className='max-md:hidden'
                   src='/assets/automation-step-01-01.svg'
                   alt='Automation 1 figure'
@@ -122,6 +124,8 @@ const AutomationShowcase = ({ step = 1 }: { step: 1 | 2 | 3 | 4 }) => {
                   height={697}
                 />
                 <Image
+                  priority
+                  loading='eager'
                   className='md:hidden self-center mx-auto'
                   src='/assets/automation-step-01-01-alt.svg'
                   alt='Automation 1 figure'
