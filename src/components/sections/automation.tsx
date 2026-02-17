@@ -141,7 +141,7 @@ const AutomationShowcase = ({ step = 1 }: { step: 1 | 2 | 3 | 4 }) => {
               <StatusBadge status={statuses[0]} />
               <span>
                 Scan complete{" "}
-                <span className='text-dark-950/50'>
+                <span className='text-dark-950/65'>
                   (
                   <AnimatedCounter
                     delay={0.485}

@@ -97,7 +97,7 @@ const FooterSection = ({ className, ...props }: FooterProps) => {
         <Image
           src='/assets/texture.avif'
           alt='footer background'
-          loading='eager'
+          loading='lazy'
           width={1920}
           height={1080}
           className='absolute inset-0 z-0 h-full w-full object-cover object-center max-xs:max-h-156'
