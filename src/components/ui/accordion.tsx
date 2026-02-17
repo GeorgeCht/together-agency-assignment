@@ -44,6 +44,7 @@ function useAccordionTimer({
     }, interval);
   }, [interval, itemsLength, setActiveIndex]);
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: *
   useEffect(() => {
     startTimer();
     return () => {
@@ -212,11 +213,7 @@ function MobileAccordion({
       </div>
 
       <div className='relative overflow-hidden'>
-        <AnimatePresence
-          initial={false}
-          mode='popLayout'
-          custom={direction}
-        >
+        <AnimatePresence initial={false} mode='popLayout' custom={direction}>
           <Motion.div
             key={activeIndex}
             custom={direction}
@@ -242,9 +239,9 @@ function MobileAccordion({
               opacity: { duration: 0.3 },
             }}
           >
-            <h3 className='text-bodylg font-medium text-dark-950 mb-3'>
+            <span className='text-bodylg font-medium text-dark-950 mb-3'>
               {activeItem.title}
-            </h3>
+            </span>
             <p className='text-bodymd text-dark-800 text-balance leading-normal mb-6'>
               {activeItem.content}
             </p>

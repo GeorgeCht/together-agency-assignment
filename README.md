@@ -2,7 +2,7 @@
 
 This is a technical assignment for a creative developer position at Together Agency. Developed by GeorgeCht.
 
-Live preview build [here](https://georgecht.github.io/together-agency-assignment/).
+Live preview build [here](https://together-agency-assignment.georgecht420.workers.dev).
 
 ## Getting Started
 
